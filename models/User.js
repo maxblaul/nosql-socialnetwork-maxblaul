@@ -14,20 +14,20 @@ const userSchema = new Schema(
             required: true,
             unique: true,
             validate: {
-                validator: function(v) {
+                validator: function (v) {
                     return /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/.test(v);
                 }
             }
-          },
-      
+        },
 
-        friends:[
+
+        friends: [
             {
                 type: Schema.Types.ObjectId,
                 ref: 'User',
             }
         ],
-        thoughts:[
+        thoughts: [
             {
                 type: Schema.Types.ObjectId,
                 ref: 'Thought',
@@ -44,7 +44,7 @@ const userSchema = new Schema(
 
 );
 
-userSchema.virtual('friendCount').get(function(){
+userSchema.virtual('friendCount').get(function () {
     return this.friends.length;
 });
 

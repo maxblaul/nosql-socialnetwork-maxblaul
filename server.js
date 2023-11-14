@@ -5,7 +5,7 @@ const routes = require('./routes');
 const PORT = process.env.PORT || 3001;
 const app = express();
 // Middleware to parse incoming data
-app.use(express.urlencoded({ extended: true}));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 // Use defined routes
 app.use(routes);
