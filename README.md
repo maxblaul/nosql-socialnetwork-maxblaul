@@ -53,7 +53,7 @@ I don't think there is anything to contribute to this but if you want to, please
 
 ## Tests
 
-Testing of the routes is shown below in the screen recording.
+Testing of the routes is shown below in the screen recording. I am aware that the Thought and Reaction routes don't work. I am going to ask a TA about that in office hours next class. The video stops at the CREATE Thought route becuase there really isn't anything else to show if that particular route is not working.
 
 ## Questions
 
@@ -65,7 +65,7 @@ https://github.com/maxblaul/nosql-socialnetwork-maxblaul
 
 ## Screen Recording Link
 
-
+https://watch.screencastify.com/v/jrKSD7CNxasCNsl9KjJy
 
 ## Resources
 
