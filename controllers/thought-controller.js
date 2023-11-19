@@ -28,8 +28,21 @@ const ThoughtController = {
     // Handler creates thoughts
     async createThought(req, res) {
         try {
-            const thought = await Thought.create({ _id: req.params.thoughtId });
-            res.status(201).json(thought);
+            const thought = await Thought.create(req.body);
+
+            const userData = await User.findOneAndUpdate(
+                { _id: req.body.x },
+                { $push: { thoughts: thought._id } },
+                { new: true }
+            );
+            
+            if (!userData) {
+                return res.status(404).json({ message: 'Thoughts created but, No user with that ID'})
+            };
+
+            res.json({ message: 'Thought created!', thought})
+
+            // res.status(201).json(thought);
         } catch (err) {
             res.status(500).json(err);
         }
