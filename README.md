@@ -65,7 +65,9 @@ https://github.com/maxblaul/nosql-socialnetwork-maxblaul
 
 ## Screen Recording Link
 
-https://watch.screencastify.com/v/jrKSD7CNxasCNsl9KjJy
+UPDATED:
+
+https://watch.screencastify.com/v/ovlzgjrZPQFQBW5D0s2h
 
 ## Resources
 

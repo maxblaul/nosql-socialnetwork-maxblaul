@@ -75,6 +75,8 @@ const ThoughtController = {
     // Handler for reaction creation
     async createReaction(req, res) {
         try {
+            // const newReaction = await Reaction.create(req.body);
+
             const thought = await Thought.findOneAndUpdate(
                 { _id: req.params.thoughtId },
                 { $addToSet: { reactions: req.body } },
